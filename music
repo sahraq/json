@@ -1,9 +1,9 @@
 [
   {
-    "title": "Thriller",
-    "artist": "Michael Jackson",
+    "title": "Velevet Rope",
+    "artist": "Janet Jackson",
     "year": 1982,
-    "image": url('https://raw.githubusercontent.com/sahraq/js-interaction-generator/main/crying-laughing.gif');
+    "image": url('R-347026-1371833305-7372.jpg');
     "link": "https://example.com/thriller",
     "tags": ["Pop", "Classic", "Best Seller"]
   },
