@@ -10,21 +10,21 @@
     "title": "Bad Girls ",
     "artist": "Donna Summer",
     "year": 1979,
-    "image": 
+    "image": url('5889.jpg')
     "tags": ["Disco"]
   },
   {
     "title": "My Life",
     "artist": "Mary J Blige",
     "year": 1994,
-    "image":
+    "image":url('maryjbligemylife.jpg')
     "tags": ["RNB"]
   }
  {
     "title": "Adventures in Paradise",
     "artist": "Minnie Riperton",
     "year": 1975,
-    "image":
+    "image":url('
     "tags": ["RNB"]
   }
 ]
