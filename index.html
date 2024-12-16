@@ -1,52 +1,63 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.album {
-  width: 300px;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background-color: #fff;
-}
+<script>
+  // JSON data representing music albums
+  const albums = [
+    {
+      "title": "Velvet Rope",
+      "artist": "Janet Jackson",
+      "year": 1997,
+      "image": "https://github.com/sahraq/json/raw/main/R-347026-1371833305-7372.jpg",
+      "tags": ["Neo-Soul"]
+    },
+    {
+      "title": "Bad Girls",
+      "artist": "Donna Summer",
+      "year": 1979,
+      "image": "https://github.com/sahraq/json/raw/main/5889.jpg",
+      "tags": ["Disco"]
+    },
+    {
+      "title": "My Life",
+      "artist": "Mary J Blige",
+      "year": 1994,
+      "image": "https://github.com/sahraq/json/raw/main/maryjbligemylife.jpg",
+      "tags": ["RNB"]
+    },
+    {
+      "title": "Adventures in Paradise",
+      "artist": "Minnie Riperton",
+      "year": 1975,
+      "image": "https://github.com/sahraq/json/raw/main/1200x1200bf-60.jpg",
+      "tags": ["Soul"]
+    }
+  ];
 
-.album img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
+  // Extract album data and render them on the page
+  const container = document.body;
+  albums.forEach(album => {
+    const albumDiv = document.createElement('div');
+    albumDiv.className = 'album';
+    albumDiv.innerHTML = `
+      <img src="${album.image}" alt="${album.title} Cover">
+      <h3>${album.title}</h3>
+      <p><strong>Artist:</strong> ${album.artist}</p>
+      <p><strong>Released:</strong> ${album.year}</p>
+      <div class="tags">
+        ${album.tags.map(tag => `<span>${tag}</span>`).join('')}
+      </div>
+    `;
+    container.appendChild(albumDiv);
+  });
+</script>
 
-.album h3 {
-  margin: 10px 0;
-  font-size: 1.5em;
-  color: #333;
-}
-
-.album p {
-  color: #555;
-  font-size: 1em;
-}
-
-.tags {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.tags span {
-  background-color: #ddd;
-  padding: 5px 10px;
-  border-radius: 15px;
-  margin: 0 5px;
-  font-size: 12px;
-}
+</body>
+</html>
