@@ -1,0 +1,42 @@
+function displayItems(items) {
+  const container = document.getElementById('item-container');
+
+  items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    // Title
+    const title = document.createElement('h2');
+    title.textContent = item.title;
+    card.appendChild(title);
+
+    // Image
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = item.title;
+    card.appendChild(img);
+
+    // Description
+    const description = document.createElement('p');
+    description.textContent = item.description;
+    card.appendChild(description);
+
+    // Tags
+    const tags = document.createElement('div');
+    tags.className = 'tags';
+    item.tags.forEach(tag => {
+      const tagElement = document.createElement('span');
+      tagElement.textContent = tag;
+      tags.appendChild(tagElement);
+    });
+    card.appendChild(tags);
+
+    // Link
+    const link = document.createElement('a');
+    link.href = item.link;
+    link.textContent = 'View Project';
+    card.appendChild(link);
+
+    container.appendChild(card);
+  });
+}
