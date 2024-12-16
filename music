@@ -1,16 +1,26 @@
 [
   {
-    "title": "Project One",
-    "description": "A dynamic website built using HTML, CSS, and JavaScript.",
-    "image": "project-one.jpg",
-    "link": "https://github.com/username/project-one",
-    "tags": ["HTML", "CSS", "JavaScript"]
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "year": 1982,
+    "image": url('https://raw.githubusercontent.com/sahraq/js-interaction-generator/main/crying-laughing.gif');
+    "link": "https://example.com/thriller",
+    "tags": ["Pop", "Classic", "Best Seller"]
   },
   {
-    "title": "Project Two",
-    "description": "A responsive e-commerce site.",
-    "image": "project-two.jpg",
-    "link": "https://github.com/username/project-two",
-    "tags": ["HTML", "CSS", "React"]
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "year": 1980,
+    "image": "back-in-black.jpg",
+    "link": "https://example.com/back-in-black",
+    "tags": ["Rock", "Hard Rock", "Classic"]
+  },
+  {
+    "title": "Abbey Road",
+    "artist": "The Beatles",
+    "year": 1969,
+    "image": "abbey-road.jpg",
+    "link": "https://example.com/abbey-road",
+    "tags": ["Rock", "Classic", "Psychedelic"]
   }
 ]
