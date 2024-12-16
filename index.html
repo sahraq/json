@@ -74,8 +74,9 @@
   <div id="music-container"></div>
 
   <script>
+    // Fetch JSON data and populate the page
     fetch('music.json') // Replace with the correct path to your JSON file
-      .then(response => music.json())
+      .then(response => response.json()) // Correctly parse the JSON
       .then(musicCollection => {
         const container = document.getElementById('music-container');
         
@@ -105,13 +106,6 @@
           year.textContent = `Released: ${album.year}`;
           card.appendChild(year);
 
-          // Link to listen
-          const link = document.createElement('a');
-          link.href = album.link;
-          link.textContent = 'Listen Now';
-          link.target = '_blank';
-          card.appendChild(link);
-
           // Add card to container
           container.appendChild(card);
         });
@@ -120,3 +114,4 @@
   </script>
 </body>
 </html>
+
