@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Project One",
+    "description": "A dynamic website built using HTML, CSS, and JavaScript.",
+    "image": "project-one.jpg",
+    "link": "https://github.com/username/project-one",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "title": "Project Two",
+    "description": "A responsive e-commerce site.",
+    "image": "project-two.jpg",
+    "link": "https://github.com/username/project-two",
+    "tags": ["HTML", "CSS", "React"]
+  }
+]
