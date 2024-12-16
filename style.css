@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: red; /* Red background */
+  color: #fff;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,6 +10,17 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   min-height: 100vh;
+  text-align: center; /* Centering text */
+}
+
+/* Page Title */
+.page-title {
+  font-size: 2.5em;
+  margin-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* Container for Albums */
@@ -59,8 +70,8 @@ body {
   color: #222;
   text-align: center;
   font-weight: bold;
-  text-transform: uppercase; /* Adding emphasis to album titles */
-  letter-spacing: 2px; /* Adding spacing to the title */
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Album Artist and Year */
@@ -68,7 +79,6 @@ body {
   margin: 10px 20px;
   font-size: 1em;
   color: #555;
-  text-align: center;
 }
 
 /* Tags (Genres) */
@@ -94,6 +104,16 @@ body {
   color: #333;
 }
 
+/* Largest Album Styling */
+.album.largest {
+  grid-column: span 2; /* This makes it span 2 columns */
+  background-color: #ffe0e0; /* Light background for the largest album */
+}
+
+.album.largest img {
+  height: 300px; /* Making the image larger */
+}
+
 /* Button to go to the next section (optional) */
 .button {
   display: block;
@@ -114,4 +134,3 @@ body {
 .button:hover {
   background-color: #f8a5a5;
 }
-
