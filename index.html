@@ -1,117 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Collection</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-    }
+<script>
+  fetch('music.json') // Replace with the correct path to your JSON file
+    .then(response => response.json()) // Corrected the typo
+    .then(musicCollection => {
+      const container = document.getElementById('music-container');
+      
+      musicCollection.forEach(album => {
+        // Create card container
+        const card = document.createElement('div');
+        card.className = 'card';
 
-    #music-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      padding: 20px;
-    }
+        // Album cover
+        const img = document.createElement('img');
+        img.src = album.image;
+        img.alt = `${album.title} Cover`;
+        card.appendChild(img);
 
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 250px;
-      text-align: center;
-      padding: 15px;
-      transition: transform 0.2s ease-in-out;
-    }
+        // Album title
+        const title = document.createElement('h2');
+        title.textContent = album.title;
+        card.appendChild(title);
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+        // Artist
+        const artist = document.createElement('p');
+        artist.textContent = `Artist: ${album.artist}`;
+        card.appendChild(artist);
 
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
+        // Year
+        const year = document.createElement('p');
+        year.textContent = `Released: ${album.year}`;
+        card.appendChild(year);
 
-    .card h2 {
-      font-size: 18px;
-      margin: 10px 0 5px;
-      color: #333;
-    }
+        // Tags
+        const tags = document.createElement('p');
+        tags.textContent = `Tags: ${album.tags.join(', ')}`;
+        card.appendChild(tags);
 
-    .card p {
-      color: #666;
-      font-size: 14px;
-      margin: 5px 0;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    .card a:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <h1 style="text-align:center; padding: 20px; color: #333;">Music Collection</h1>
-  <div id="music-container"></div>
-
-  <script>
-    // Fetch JSON data and populate the page
-    fetch('music.json') // Replace with the correct path to your JSON file
-      .then(response => response.json()) // Correctly parse the JSON
-      .then(musicCollection => {
-        const container = document.getElementById('music-container');
-        
-        musicCollection.forEach(album => {
-          // Create card container
-          const card = document.createElement('div');
-          card.className = 'card';
-
-          // Album cover
-          const img = document.createElement('img');
-          img.src = album.image;
-          img.alt = `${album.title} Cover`;
-          card.appendChild(img);
-
-          // Album title
-          const title = document.createElement('h2');
-          title.textContent = album.title;
-          card.appendChild(title);
-
-          // Artist
-          const artist = document.createElement('p');
-          artist.textContent = `Artist: ${album.artist}`;
-          card.appendChild(artist);
-
-          // Year
-          const year = document.createElement('p');
-          year.textContent = `Released: ${album.year}`;
-          card.appendChild(year);
-
-          // Add card to container
-          container.appendChild(card);
-        });
-      })
-      .catch(error => console.error('Error fetching music.json:', error));
-  </script>
-</body>
-</html>
-
+        // Add card to container
+        container.appendChild(card);
+      });
+    })
+    .catch(error => console.error('Error fetching music.json:', error));
+</script>
