@@ -1,30 +1,31 @@
 [
   {
-    "title": "Velevet Rope",
+    "title": "Velvet Rope",
     "artist": "Janet Jackson",
     "year": 1997,
-    "image": url('https://github.com/sahraq/json/blob/main/R-347026-1371833305-7372.jpg?raw=true');
+    "image": "https://github.com/sahraq/json/blob/main/R-347026-1371833305-7372.jpg?raw=true",
     "tags": ["Neo-Soul"]
   },
   {
-    "title": "Bad Girls ",
+    "title": "Bad Girls",
     "artist": "Donna Summer",
     "year": 1979,
-    "image": url('https://github.com/sahraq/json/blob/main/5889.jpg?raw=true')
+    "image": "https://github.com/sahraq/json/blob/main/5889.jpg?raw=true",
     "tags": ["Disco"]
   },
   {
     "title": "My Life",
     "artist": "Mary J Blige",
     "year": 1994,
-    "image":url('https://github.com/sahraq/json/blob/main/maryjbligemylife.jpg?raw=true')
+    "image": "https://github.com/sahraq/json/blob/main/maryjbligemylife.jpg?raw=true",
     "tags": ["RNB"]
-  }
- {
+  },
+  {
     "title": "Adventures in Paradise",
     "artist": "Minnie Riperton",
     "year": 1975,
-    "image":url('https://github.com/sahraq/json/blob/main/1200x1200bf-60.jpg?raw=true')
+    "image": "https://github.com/sahraq/json/blob/main/1200x1200bf-60.jpg?raw=true",
     "tags": ["Soul"]
   }
 ]
+
