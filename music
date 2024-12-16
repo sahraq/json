@@ -10,7 +10,7 @@
     "title": "Bad Girls ",
     "artist": "Donna Summer",
     "year": 1979,
-    "image": url('5889.jpg')
+    "image": url('https://github.com/sahraq/json/blob/main/5889.jpg?raw=true')
     "tags": ["Disco"]
   },
   {
