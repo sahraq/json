@@ -17,7 +17,7 @@
     "title": "My Life",
     "artist": "Mary J Blige",
     "year": 1994,
-    "image":url('maryjbligemylife.jpg')
+    "image":url('https://github.com/sahraq/json/blob/main/maryjbligemylife.jpg?raw=true')
     "tags": ["RNB"]
   }
  {
