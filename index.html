@@ -1,61 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Collection</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="music-container"></div>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  <script>
-    fetch('https://github.com/sahraq/json/blob/main/music.json?raw=true') // Corrected URL to GitHub raw link
-      .then(response => response.json())
-      .then(musicCollection => {
-        const container = document.getElementById('music-container');
-        
-        musicCollection.forEach(album => {
-          // Create card container
-          const card = document.createElement('div');
-          card.className = 'card';
+.album {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
 
-          // Album cover
-          const img = document.createElement('img');
-          img.src = album.image;
-          img.alt = `${album.title} Cover`;
-          card.appendChild(img);
+.album img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
-          // Album title
-          const title = document.createElement('h2');
-          title.textContent = album.title;
-          card.appendChild(title);
+.album h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
 
-          // Artist
-          const artist = document.createElement('p');
-          artist.textContent = `Artist: ${album.artist}`;
-          card.appendChild(artist);
+.album p {
+  color: #555;
+  font-size: 1em;
+}
 
-          // Year
-          const year = document.createElement('p');
-          year.textContent = `Released: ${album.year}`;
-          card.appendChild(year);
+.tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-          // Tags
-          const tagsContainer = document.createElement('div');
-          tagsContainer.className = 'tags'; // New div for tags
-          album.tags.forEach(tag => {
-            const tagSpan = document.createElement('span');
-            tagSpan.textContent = tag;
-            tagsContainer.appendChild(tagSpan);
-          });
-          card.appendChild(tagsContainer);
-
-          // Add card to container
-          container.appendChild(card);
-        });
-      })
-      .catch(error => console.error('Error fetching music.json:', error));
-  </script>
-</body>
-</html>
+.tags span {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 0 5px;
+  font-size: 12px;
+}
