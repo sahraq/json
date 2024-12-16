@@ -8,56 +8,47 @@
 </head>
 <body>
 
-<script>
-  // JSON data representing music albums
-  const albums = [
-    {
-      "title": "Velvet Rope",
-      "artist": "Janet Jackson",
-      "year": 1997,
-      "image": "https://github.com/sahraq/json/raw/main/R-347026-1371833305-7372.jpg",
-      "tags": ["Neo-Soul"]
-    },
-    {
-      "title": "Bad Girls",
-      "artist": "Donna Summer",
-      "year": 1979,
-      "image": "https://github.com/sahraq/json/raw/main/5889.jpg",
-      "tags": ["Disco"]
-    },
-    {
-      "title": "My Life",
-      "artist": "Mary J Blige",
-      "year": 1994,
-      "image": "https://github.com/sahraq/json/raw/main/maryjbligemylife.jpg",
-      "tags": ["RNB"]
-    },
-    {
-      "title": "Adventures in Paradise",
-      "artist": "Minnie Riperton",
-      "year": 1975,
-      "image": "https://github.com/sahraq/json/raw/main/1200x1200bf-60.jpg",
-      "tags": ["Soul"]
-    }
-  ];
-
-  // Extract album data and render them on the page
-  const container = document.body;
-  albums.forEach(album => {
-    const albumDiv = document.createElement('div');
-    albumDiv.className = 'album';
-    albumDiv.innerHTML = `
-      <img src="${album.image}" alt="${album.title} Cover">
-      <h3>${album.title}</h3>
-      <p><strong>Artist:</strong> ${album.artist}</p>
-      <p><strong>Released:</strong> ${album.year}</p>
+  <div class="container">
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/R-347026-1371833305-7372.jpg" alt="Velvet Rope">
+      <h3>Velvet Rope</h3>
+      <p><strong>Artist:</strong> Janet Jackson</p>
+      <p><strong>Released:</strong> 1997</p>
       <div class="tags">
-        ${album.tags.map(tag => `<span>${tag}</span>`).join('')}
+        <span>Neo-Soul</span>
       </div>
-    `;
-    container.appendChild(albumDiv);
-  });
-</script>
+    </div>
+
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/5889.jpg" alt="Bad Girls">
+      <h3>Bad Girls</h3>
+      <p><strong>Artist:</strong> Donna Summer</p>
+      <p><strong>Released:</strong> 1979</p>
+      <div class="tags">
+        <span>Disco</span>
+      </div>
+    </div>
+
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/maryjbligemylife.jpg" alt="My Life">
+      <h3>My Life</h3>
+      <p><strong>Artist:</strong> Mary J Blige</p>
+      <p><strong>Released:</strong> 1994</p>
+      <div class="tags">
+        <span>RNB</span>
+      </div>
+    </div>
+
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/1200x1200bf-60.jpg" alt="Adventures in Paradise">
+      <h3>Adventures in Paradise</h3>
+      <p><strong>Artist:</strong> Minnie Riperton</p>
+      <p><strong>Released:</strong> 1975</p>
+      <div class="tags">
+        <span>Soul</span>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
