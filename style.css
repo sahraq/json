@@ -1,52 +1,54 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.album {
-  width: 300px;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background-color: #fff;
-}
+  <div class="container">
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/R-347026-1371833305-7372.jpg" alt="Velvet Rope">
+      <h3>Velvet Rope</h3>
+      <p><strong>Artist:</strong> Janet Jackson</p>
+      <p><strong>Released:</strong> 1997</p>
+      <div class="tags">
+        <span>Neo-Soul</span>
+      </div>
+    </div>
 
-.album img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/5889.jpg" alt="Bad Girls">
+      <h3>Bad Girls</h3>
+      <p><strong>Artist:</strong> Donna Summer</p>
+      <p><strong>Released:</strong> 1979</p>
+      <div class="tags">
+        <span>Disco</span>
+      </div>
+    </div>
 
-.album h3 {
-  margin: 10px 0;
-  font-size: 1.5em;
-  color: #333;
-}
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/maryjbligemylife.jpg" alt="My Life">
+      <h3>My Life</h3>
+      <p><strong>Artist:</strong> Mary J Blige</p>
+      <p><strong>Released:</strong> 1994</p>
+      <div class="tags">
+        <span>RNB</span>
+      </div>
+    </div>
 
-.album p {
-  color: #555;
-  font-size: 1em;
-}
+    <div class="album">
+      <img src="https://github.com/sahraq/json/raw/main/1200x1200bf-60.jpg" alt="Adventures in Paradise">
+      <h3>Adventures in Paradise</h3>
+      <p><strong>Artist:</strong> Minnie Riperton</p>
+      <p><strong>Released:</strong> 1975</p>
+      <div class="tags">
+        <span>Soul</span>
+      </div>
+    </div>
+  </div>
 
-.tags {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.tags span {
-  background-color: #ddd;
-  padding: 5px 10px;
-  border-radius: 15px;
-  margin: 0 5px;
-  font-size: 12px;
-}
+</body>
+</html>
