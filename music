@@ -2,25 +2,29 @@
   {
     "title": "Velevet Rope",
     "artist": "Janet Jackson",
-    "year": 1982,
+    "year": 1997,
     "image": url('R-347026-1371833305-7372.jpg');
-    "link": "https://example.com/thriller",
-    "tags": ["Pop", "Classic", "Best Seller"]
+    "tags": ["Neo-Soul"]
   },
   {
-    "title": "Back in Black",
-    "artist": "AC/DC",
-    "year": 1980,
-    "image": "back-in-black.jpg",
-    "link": "https://example.com/back-in-black",
-    "tags": ["Rock", "Hard Rock", "Classic"]
+    "title": "Bad Girls ",
+    "artist": "Donna Summer",
+    "year": 1979,
+    "image": 
+    "tags": ["Disco"]
   },
   {
-    "title": "Abbey Road",
-    "artist": "The Beatles",
-    "year": 1969,
-    "image": "abbey-road.jpg",
-    "link": "https://example.com/abbey-road",
-    "tags": ["Rock", "Classic", "Psychedelic"]
+    "title": "My Life",
+    "artist": "Mary J Blige",
+    "year": 1994,
+    "image":
+    "tags": ["RNB"]
+  }
+ {
+    "title": "Adventures in Paradise",
+    "artist": "Minnie Riperton",
+    "year": 1975,
+    "image":
+    "tags": ["RNB"]
   }
 ]
